@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atul Mishra | Designer & Full Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+        <div class="bubble bubble-4"></div>
+        <div class="bubble bubble-5"></div>
+        <div class="bubble bubble-6"></div>
+    </div>
+
+    <!-- Header with Navigation -->
+    <header id="header" class="fixed w-full bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-2">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-white">
+                    <a href="#" class="flex items-center">
+                        <span class="text-white">Atul</span><span class="text-yellow-300">Mishra</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#home" class="nav-link text-white">Home</a>
+                    <a href="#about" class="nav-link text-white">About</a>
+                    <a href="#skills" class="nav-link text-white">Skills</a>
+                    <a href="#projects" class="nav-link text-white">Projects</a>
+                    <a href="#testimonials" class="nav-link text-white">Testimonials</a>
+                    <a href="#contact" class="nav-link text-white">Contact</a>
+                </nav>
+                
+                <!-- Mobile Navigation Toggle -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden mt-2 pb-2">
+                <div class="flex flex-col space-y-2">
+                    <a href="#home" class="mobile-nav-link text-white">Home</a>
+                    <a href="#about" class="mobile-nav-link text-white">About</a>
+                    <a href="#skills" class="mobile-nav-link text-white">Skills</a>
+                    <a href="#projects" class="mobile-nav-link text-white">Projects</a>
+                    <a href="#testimonials" class="mobile-nav-link text-white">Testimonials</a>
+                    <a href="#contact" class="mobile-nav-link text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
+        <div class="container mx-auto px-6 py-16">
+            <div class="flex flex-col-reverse lg:flex-row items-center gap-2">
+                <div class="lg:w-1/2 text-center lg:text-left" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 text-gradient">
+                        Turning <span class="text-pink-600">Ideas</span> Into 
+                        <span class="text-purple-600">Digital Reality</span>
+                    </h1>
+                    <p class="text-xl text-gray-700 mb-8">
+                        Full Stack Developer crafting beautiful, functional websites and applications.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="btn-primary bg-gradient-to-r from-purple-600 to-pink-500">
+                            Hire Me
+                        </a>
+                        <a href="#projects" class="btn-secondary">
+                            View My Work
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mb-10 lg:mb-0" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="relative">
+                        <div class="hero-image-container absolute -right-9">
+                            <img src="./images/undraw_progressive-app_9517.svg" alt="Digital Illustration" class="mx-auto rounded-lg shadow-2xl ">
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 bg-pink-500 w-32 h-32 rounded-lg opacity-20 animate-pulse"></div>
+                        <div class="absolute -top-6 -left-6 bg-purple-500 w-32 h-32 rounded-lg opacity-20 animate-pulse"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider bg-gradient-to-r from-purple-600 to-pink-500"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/3 mb-10 lg:mb-0" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="relative">
+                        <img src="./images/photo.jpeg" alt="John Doe" class="mx-auto rounded-full w-64 h-64 object-cover border-4 border-pink-500 shadow-lg">
+                        <div class="absolute -bottom-4 -right-4 bg-purple-500 w-20 h-20 rounded-full opacity-20 animate-pulse"></div>
+                    </div>
+                </div>
+                <div class="lg:w-2/3 lg:pl-16" data-aos="fade-left" data-aos-duration="1000">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-600">Who am I?</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        I am a passionat web developer with strong skills in both front-end and back-end and Continuously learning and improving my skills.
+                    </p>
+                    <p class="text-gray-700 mb-8 leading-relaxed">
+                        My approach focuses on clean code, intuitive user experiences, and performance optimization. I believe that great design should be accessible to everyone, and I strive to create inclusive digital products that work seamlessly across all devices.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-all">
+                            <div class="text-pink-500 text-3xl mb-2">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4 class="font-bold mb-2 text-purple-700">Web Development</h4>
+                            <p class="text-gray-600 text-sm">Building responsive and performant websites</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-all">
+                            <div class="text-pink-500 text-3xl mb-2">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h4 class="font-bold mb-2 text-purple-700">UI/UX Design</h4>
+                            <p class="text-gray-600 text-sm">Creating intuitive and beautiful user interfaces</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-4 rounded-lg shadow-sm hover:shadow-md transition-all">
+                            <div class="text-pink-500 text-3xl mb-2">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4 class="font-bold mb-2 text-purple-700">Mobile Apps</h4>
+                            <p class="text-gray-600 text-sm">Developing cross-platform mobile applications</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap">
+                        <a href="#contact" class="btn-primary bg-gradient-to-r from-purple-600 to-pink-500 mr-4 mb-4">Get In Touch</a>
+                        <a href="https://www.canva.com/design/DAGSri-FH_g/mXnf-BvC-9OBc5gRzRNeeQ/view?utm_content=DAGSri-FH_g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hff98fb866e" target="_blank" class="btn-outline border-purple-500 text-purple-500 hover:bg-purple-500 mb-4">My CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 relative ">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-divider bg-gradient-to-r from-purple-600 to-pink-500"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto">
+                    I've build most of my projects with these technologies, I have Mention my proficiency in each of these technologies in the progress bar, I'm continuously learning to elevate my skills to create something bigger and impactful
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="text-xl font-bold mb-6 text-purple-600">Technical Skills</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-1">
+                            <span class="font-medium">HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="skill-progress bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full" data-width="95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-1">
+                            <span class="font-medium">JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="skill-progress bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full" data-width="70%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-1">
+                            <span class="font-medium">React</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="skill-progress bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full" data-width="65%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-1">
+                            <span class="font-medium">Node.js</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="skill-progress bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full" data-width="50%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-1">
+                            <span class="font-medium">Java</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="skill-progress bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full" data-width="50%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-6 text-pink-500">Design Skills</h3>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <div class="skill-card bg-white hover:bg-gradient-to-br hover:from-purple-50 hover:to-pink-50">
+                            <div class="text-pink-500 text-3xl mb-2">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <h4 class="font-bold text-purple-700">Figma</h4>
+                        </div>
+                        
+                        <div class="skill-card bg-white hover:bg-gradient-to-br hover:from-purple-50 hover:to-pink-50">
+                            <div class="text-pink-500 text-3xl mb-2">
+                                <i class="fab fa-c"></i>
+                            </div>
+                            <h4 class="font-bold text-purple-700">Canva</h4>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-divider bg-gradient-to-r from-purple-600 to-pink-500"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto">
+                    Here are some of my recent projects. Each one presented unique challenges and opportunities for growth.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="800">
+                    <div class="project-image">
+                        <img src="./images/weatherApp.png" alt="E-commerce Website" class="w-full h-64 object-cover rounded-t-lg">
+                        <div class="project-overlay bg-gradient-to-r from-purple-600 to-pink-500 bg-opacity-90">
+                            <div class="flex space-x-4">
+                                <a href="https://atulmishra.in/" target="_blank" class="project-btn text-purple-600">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                                <a href="https://github.com/AtulMishra001/Weather-App" target="_blank" class="project-btn text-purple-600">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-purple-600">Desktop Weather App</h3>
+                        <p class="text-gray-600 mb-4">A weather app provides you the current weather data and three hours step forcast</p>
+                        <div class="flex flex-wrap">
+                            <span class="tech-tag bg-purple-100 text-purple-600">React</span>
+                            <span class="tech-tag bg-purple-100 text-purple-600">Node.js</span>
+                            <span class="tech-tag bg-purple-100 text-purple-600">Tailwind Css</span>
+                            <span class="tech-tag bg-purple-100 text-purple-600">Open weather API</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="./images/Screenshot 2025-05-31 at 9.04.49 PM.png" alt="Mobile App Dashboard" class="w-full h-64 object-cover rounded-t-lg">
+                        <div class="project-overlay bg-gradient-to-r from-purple-600 to-pink-500 bg-opacity-90">
+                            <div class="flex space-x-4">
+                                <a href="https://agriculture-schemes.vercel.app/" target="_blank" class="project-btn text-purple-600">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                                <a href="https://github.com/manvesingh/Agriculture_Schemes" target="_blank" class="project-btn text-purple-600">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-pink-500">Farming Schemes</h3>
+                        <p class="text-gray-600 mb-4">A Responsive web Based application system for farmers to apply in government schemes and know more about different kind of crops</p>
+                        <div class="flex flex-wrap">
+                            <span class="tech-tag bg-pink-100 text-pink-600">Next js</span>
+                            <span class="tech-tag bg-pink-100 text-pink-600">Mongo DB</span>
+                            <span class="tech-tag bg-pink-100 text-pink-600">Express</span>
+                            <span class="tech-tag bg-pink-100 text-pink-600">Tailwind Css</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="./images/soilFarming.png" alt="SaaS Dashboard" class="w-full h-64 object-cover rounded-t-lg">
+                        <div class="project-overlay bg-gradient-to-r from-purple-600 to-pink-500 bg-opacity-90">
+                            <div class="flex space-x-4">
+                                <a href="https://farming-beryl.vercel.app/" target="_blank" class="project-btn text-purple-600">
+                                    <i class="fas fa-link"></i>
+                                </a>
+                                <a href="https://github.com/AtulMishra001/Farming" target="_blank" class="project-btn text-purple-600">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-purple-600">Soil Farming</h3>
+                        <p class="text-gray-600 mb-4">A responsive web app for Gardening enthusiastics to learn and find the Suppliers of gardening equipments</p>
+                        <div class="flex flex-wrap">
+                             <span class="tech-tag bg-pink-100 text-pink-600">Next js</span>
+                            <span class="tech-tag bg-pink-100 text-pink-600">Mongo DB</span>
+                            <span class="tech-tag bg-pink-100 text-pink-600">Express</span>
+                            <span class="tech-tag bg-pink-100 text-pink-600">Tailwind Css</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="btn-outline border-purple-500 text-purple-500 hover:bg-purple-500">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Client Testimonials</h2>
+                <div class="section-divider bg-gradient-to-r from-purple-600 to-pink-500"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto">
+                    I just created this section for future these are not real client testimonials
+                </p>
+            </div>
+            
+            <div class="testimonial-slider relative">
+                <div class="testimonial-track flex transition-transform duration-500">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full" data-aos="fade-up" data-aos-duration="800">
+                            <div class="flex items-center mb-4">
+                                <div class="text-yellow-400 flex">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-6 italic">
+                                "John transformed our outdated website into a modern, user-friendly platform that perfectly represents our brand. His technical expertise and eye for design made the process smooth and the results exceeded our expectations."
+                            </p>
+                            <div class="flex items-center">
+                                <img src="/placeholder.svg?height=60&width=60&query=professional%20woman%20headshot" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4 object-cover">
+                                <div>
+                                    <h4 class="font-bold text-purple-600">Sarah Johnson</h4>
+                                    <p class="text-gray-600 text-sm">CEO, TechStart Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <div class="flex items-center mb-4">
+                                <div class="text-yellow-400 flex">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-6 italic">
+                                "Working with John was a game-changer for our e-commerce business. He built a platform that not only looks great but also performs exceptionally well. Our conversion rates have increased by 40% since the launch."
+                            </p>
+                            <div class="flex items-center">
+                                <img src="/placeholder.svg?height=60&width=60&query=professional%20man%20headshot" alt="Michael Chen" class="w-12 h-12 rounded-full mr-4 object-cover">
+                                <div>
+                                    <h4 class="font-bold text-pink-500">Michael Chen</h4>
+                                    <p class="text-gray-600 text-sm">Founder, StyleShop</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                            <div class="flex items-center mb-4">
+                                <div class="text-yellow-400 flex">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-6 italic">
+                                "John's ability to translate our complex requirements into a user-friendly application was impressive. He's not just a developer but a problem solver who truly understands business needs."
+                            </p>
+                            <div class="flex items-center">
+                                <img src="/placeholder.svg?height=60&width=60&query=professional%20woman%20headshot%20diverse" alt="Emily Rodriguez" class="w-12 h-12 rounded-full mr-4 object-cover">
+                                <div>
+                                    <h4 class="font-bold text-purple-600">Emily Rodriguez</h4>
+                                    <p class="text-gray-600 text-sm">Product Manager, InnovateCorp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full" data-aos="fade-up" data-aos-duration="800">
+                            <div class="flex items-center mb-4">
+                                <div class="text-yellow-400 flex">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-6 italic">
+                                "We hired John to redesign our mobile app, and the results were outstanding. The new interface is intuitive, modern, and our users love it. John's communication throughout the project was excellent."
+                            </p>
+                            <div class="flex items-center">
+                                <img src="/placeholder.svg?height=60&width=60&query=professional%20man%20headshot%20diverse" alt="David Kim" class="w-12 h-12 rounded-full mr-4 object-cover">
+                                <div>
+                                    <h4 class="font-bold text-pink-500">David Kim</h4>
+                                    <p class="text-gray-600 text-sm">CTO, MobileFirst</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Controls -->
+                <button class="testimonial-prev absolute top-1/2 left-0 transform -translate-y-1/2 bg-white rounded-full shadow-md p-2 focus:outline-none z-10 hidden md:block">
+                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button class="testimonial-next absolute top-1/2 right-0 transform -translate-y-1/2 bg-white rounded-full shadow-md p-2 focus:outline-none z-10 hidden md:block">
+                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                
+                <!-- Slider Dots -->
+                <div class="testimonial-dots flex justify-center mt-8 space-x-2">
+                    <button class="w-3 h-3 rounded-full bg-purple-600 focus:outline-none"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 focus:outline-none"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 focus:outline-none"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 focus:outline-none"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider bg-gradient-to-r from-purple-600 to-pink-500"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto">
+                    Have a project in mind or want to discuss a potential collaboration? Feel free to reach out!
+                </p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-10 lg:mb-0" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-2xl font-bold mb-6 text-purple-600">Contact Information</h3>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="text-pink-500 mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Location</h4>
+                                <p class="text-gray-600">Aligarh Uttar pradesh, India </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="text-pink-500 mr-4 mt-1">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-gray-600">atulm7251@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-8">
+                            <div class="text-pink-500 mr-4 mt-1">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <p class="text-gray-600">+91 967 5719 149</p>
+                            </div>
+                        </div>
+                        
+                        <h4 class="font-bold mb-4">Connect with me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/AtulMishra001" target="_blank" class="social-icon bg-gradient-to-r from-purple-500 to-pink-500">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="www.linkedin.com/in/atulmishra01" target="_blank" class="social-icon bg-gradient-to-r from-purple-500 to-pink-500">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/atul_mishra_o" target="_blank" class="social-icon bg-gradient-to-r from-purple-500 to-pink-500">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 lg:pl-10" data-aos="fade-left" data-aos-duration="1000">
+                    <form id="contact-form" action="https://formspree.io/f/mjkrvyla" method="POST" class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-lg shadow-md">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Your email" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder="Subject">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-input" placeholder="Your message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary bg-gradient-to-r from-purple-600 to-pink-500 w-full">
+                            Send Message
+                        </button>
+                        <p id="form-status" class="mt-4 text-sm text-center"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-purple-800 via-pink-700 to-red-600 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold mb-4">
+                        <a href="#" class="flex items-center">
+                            <span class="text-white">John</span><span class="text-yellow-300">Doe</span>
+                        </a>
+                    </div>
+                    <p class="text-gray-200 max-w-md">
+                        Designer & Full Stack Developer creating beautiful, functional digital experiences.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col md:flex-row md:space-x-20 space-y-8 md:space-y-0">
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-200 hover:text-white transition-colors">Home</a></li>
+                            <li><a href="#about" class="text-gray-200 hover:text-white transition-colors">About</a></li>
+                            <li><a href="#skills" class="text-gray-200 hover:text-white transition-colors">Skills</a></li>
+                            <li><a href="#projects" class="text-gray-200 hover:text-white transition-colors">Projects</a></li>
+                            <li><a href="#contact" class="text-gray-200 hover:text-white transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Connect</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/AtulMishra001" target="_blank" class="text-gray-200 hover:text-white transition-colors">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="www.linkedin.com/in/atulmishra01" target="_blank" class="text-gray-200 hover:text-white transition-colors">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="https://x.com/atul_mishra_o" target="_blank" class="text-gray-200 hover:text-white transition-colors">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-200">
+                    &copy; 2025 John Doe. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0">
+                    <a href="#" class="text-gray-200 hover:text-white transition-colors mr-4">Privacy Policy</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Main JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
