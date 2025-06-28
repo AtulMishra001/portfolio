@@ -1,30 +1,49 @@
-# Portfolio_frontend
+# Atul Mishra - Personal Portfolio
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A clean, modern, and responsive **portfolio website** built using **HTML**, **CSS**, and **JavaScript**.  
+This project showcases a personal brand, technical skills, and web development projects in a professional and visually appealing way.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/manvendrasingh95968-gmailcoms-projects/v0-portfolio-frontend)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/fskabwEEWWp)
+## 🚀 Features
 
-## Overview
+- Responsive layout for all screen sizes
+- Smooth navigation with scroll behavior
+- Animated elements 
+- Mobile-friendly navbar with toggle menu
+- Professional sections:
+  - Home
+  - About
+  - Skills
+  - Projects
+  - Contact
+- Stylish icons via [Fontawesome]([https://boxicons.com/](https://fontawesome.com))
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 📸 Preview
 
-## Deployment
+![Portfolio Screenshot](Screenshot.png)
 
-Your project is live at:
+## 🛠️ Tech Stack
 
-**[https://vercel.com/manvendrasingh95968-gmailcoms-projects/v0-portfolio-frontend](https://vercel.com/manvendrasingh95968-gmailcoms-projects/v0-portfolio-frontend)**
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6)**
 
-## Build your app
+## 📂 Folder Structure
 
-Continue building your app on:
+ ```bash
+📁 project-folder/
+├── index.html
+├── style.css
+├── script.js
+└── assets/
+├── praveen.png
+├── p-3.jpg
+├── react.png
+├── js.png
+└── mangodb.png
+```
 
-**[https://v0.dev/chat/projects/fskabwEEWWp](https://v0.dev/chat/projects/fskabwEEWWp)**
 
-## How It Works
+## 📱 Responsive Design
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Designed to adapt beautifully on all screen sizes — desktops, tablets, and mobile devices.
+---
