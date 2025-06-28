@@ -1,6 +1,6 @@
 # Atul Mishra - Personal Portfolio
 
-A clean, modern, and responsive **portfolio website** built using **HTML**, **CSS**, and **JavaScript**.  
+A clean, modern, and responsive **portfolio website** built using **HTML**, **Tailwind Css**, and **JavaScript**.  
 This project showcases a personal brand, technical skills, and web development projects in a professional and visually appealing way.
 
 ## 🚀 Features
@@ -19,12 +19,12 @@ This project showcases a personal brand, technical skills, and web development p
 
 ## 📸 Preview
 
-![Portfolio Screenshot](Screenshot.png)
+[Hosted At](https://atulmishra.in)
 
 ## 🛠️ Tech Stack
 
 - **HTML5**
-- **CSS3**
+- **Tailwind css**
 - **JavaScript (ES6)**
 
 ## 📂 Folder Structure
@@ -32,14 +32,10 @@ This project showcases a personal brand, technical skills, and web development p
  ```bash
 📁 project-folder/
 ├── index.html
-├── style.css
-├── script.js
-└── assets/
-├── praveen.png
-├── p-3.jpg
-├── react.png
-├── js.png
-└── mangodb.png
+├── styles.css
+├── main.js
+├── main.js
+└── images/
 ```
 
 
